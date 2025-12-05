@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  /* 🎨 Your "Friendly" Brand Colors */
+  --color-background: #F9F8F4; /* Beige */
+  
+  --color-brand-light: #3B8E8E;
+  --color-brand: #2A7C7C;      /* Main Teal */
+  --color-brand-dark: #1F5F5F;
+  
+  --color-text-main: #1A1A1A;
+  --color-text-muted: #4A4A4A;
+
+  /* 🔤 Fonts (We will link these in the next step) */
+  --font-sans: var(--font-inter); 
+  --font-heading: var(--font-nunito);
+  
+  /* 🟢 Friendly Rounded Corners */
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+}
+
+/* Reset base styles 
+*/
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-main);
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+@keyframes wave {
+  0% { transform: rotate(0.0deg) }
+  10% { transform: rotate(14.0deg) }
+  20% { transform: rotate(-8.0deg) }
+  30% { transform: rotate(14.0deg) }
+  40% { transform: rotate(-4.0deg) }
+  50% { transform: rotate(10.0deg) }
+  60% { transform: rotate(0.0deg) }
+  100% { transform: rotate(0.0deg) }
+}
+
+.animate-wave {
+  animation-name: wave;
+  animation-duration: 2.5s;
+  animation-iteration-count: 1;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
