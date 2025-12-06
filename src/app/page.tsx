@@ -2,7 +2,7 @@
 import Hero from "@/src/components/sections/Hero";
 import CoreValues from "@/src/components/sections/CoreValues";
 import Projects from "@/src/components/sections/FeaturedProjects";
-// import MyWorld from "@/src/components/sections/MyWorld";
+import MyWorld from "@/src/components/sections/MyWorld";
 // import Footer from "@/components/sections/Footer";
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
       <Hero />
       <CoreValues />
       <Projects />
-      {/* <MyWorld /> */}
+      <MyWorld />
       {/*<Footer /> */}
     </main>
   );
