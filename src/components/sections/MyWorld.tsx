@@ -49,7 +49,7 @@ export default function MyWorld() {
 
                 {/* Main Section Header */}
                 <div className="text-center mb-16">
-                    <h2 className="text-sm font-bold tracking-widest text-text-muted uppercase mb-2">
+                    <h2 className="text-3xl font-bold tracking-widest text-text-muted mb-2">
                         My World
                     </h2>
                 </div>
