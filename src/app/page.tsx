@@ -3,7 +3,7 @@ import Hero from "@/src/components/sections/Hero";
 import CoreValues from "@/src/components/sections/CoreValues";
 import Projects from "@/src/components/sections/FeaturedProjects";
 import MyWorld from "@/src/components/sections/MyWorld";
-// import Footer from "@/components/sections/Footer";
+import Footer from "@/src/components/sections/Footer";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <CoreValues />
       <Projects />
       <MyWorld />
-      {/*<Footer /> */}
+      <Footer />
     </main>
   );
 }
