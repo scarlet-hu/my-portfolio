@@ -23,7 +23,6 @@ export default function Footer() {
                 Let's Build <br /> Something Great.
               </h3>
               
-              {/* CHANGE 1: Contrast. Text is now white/80 (brighter) for better readability */}
               <p className="text-lg text-white/80 leading-relaxed max-w-sm">
                 Have a project in mind? Let's create something friendly, functional, and approachable together.
               </p>
@@ -38,7 +37,6 @@ export default function Footer() {
           </div>
 
           {/* RIGHT COLUMN: The Action Form (60% width) */}
-          {/* CHANGE 2: Form Container. Removed border, kept subtle bg-white/5 fill. */}
           <div className="lg:col-span-3 bg-white/5 p-8 md:p-12 rounded-3xl">
             <form className="space-y-8">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -49,7 +47,6 @@ export default function Footer() {
                     type="text"
                     id="name"
                     placeholder="Your Name"
-                    // CHANGE 1: Contrast. placeholder-white/70 makes it much easier to read
                     className="w-full bg-transparent border-b border-white/20 py-4 text-white placeholder-white/70 focus:outline-none focus:border-white transition-colors text-lg"
                   />
                 </div>

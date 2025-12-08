@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-  /* 🎨 Your "Friendly" Brand Colors */
   --color-background: #F9F8F4; /* Beige */
   
   --color-brand-light: #3B8E8E;

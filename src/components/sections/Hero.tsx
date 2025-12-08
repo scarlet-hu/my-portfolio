@@ -24,7 +24,7 @@ export default function Hero() {
 
             {/*3. Subtext */}
             <p className="text-lg md:text-xl text-text-muted mb-10 max-w-xl leading-relaxed">
-                I build apps connecting brands with people.
+                I build apps connecting great ideas with reality.
                 Let's create something friendly, functional, and approachable together.
             </p>
 
@@ -36,7 +36,7 @@ export default function Hero() {
             {/** 5. Social Icons */}
             <div className="flex gap-8 text-brand-dark opacity-80">
                 <a
-                    href="https://github.com"
+                    href="https://github.com/scarlet-hu"
                     target="_blank"
                     rel="noreferrer"
                     className="hover:text-brand hover:scale-110 transition-transform"

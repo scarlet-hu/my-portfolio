@@ -5,26 +5,26 @@ import { ArrowRight } from "lucide-react";
 const projects = [
     {
         id: 1,
-        title: "Place holder",
+        title: "Iris",
         category: "Web App",
-        image: "/projects/project-1.png",
-        description: "xxxx",
+        image: "/projects/Iris.png",
+        description: "A full-stack Kanban solution integrating instant messaging, task tracking, and data visualization",
         link: "#"
     },
     {
         id: 2,
-        title: "place holder ",
-        category: "Web App",
-        image: "/projects/project-1.png",
-        description: "xxxx",
-        link: "#"
+        title: "MiniSpark",
+        category: "multi-threaded processing Framework",
+        image: "/projects/join copy.png",
+        description: " A multi-threaded distributed data processing framework",
+        link: "https://github.com/scarlet-hu/MiniSpark"
     },
     {
         id: 3,
-        title: "Place holder",
+        title: "Todo List",
         category: "Web App",
-        image: "/projects/project-1.png",
-        description: "xxxx",
+        image: "/projects/todolist.png",
+        description: "Making daily progress visualizable",
         link: "#"
     }
 ]
@@ -69,12 +69,12 @@ export default function Projects() {
                                 {project.description}
                             </p>
 
-                            {/* "View Live" Link */}
+                            {/* "View Live" Link #TODO: maybe change the text back to view live later */}
                             <a
                                 href={project.link}
                                 className="inline-flex items-center text-brand font-bold text-sm hover:underline"
                             >
-                                View Live
+                                View Project
                                 <ArrowRight size={16} className="ml-1 transition-transform group-hover:translate-x-1" />
                             </a>
                         </div>
