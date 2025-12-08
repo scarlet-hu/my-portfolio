@@ -5,23 +5,23 @@ import { Pizza, Lightbulb } from "lucide-react"
 const travelPhotos = [
     {
         id: 1,
-        location: "Kyoto, Japan",
-        description: "Hiking and experienced local Kyoto culture",
+        location: "Nara Park, Japan",
+        description: "A simple, relaxing park filled with nature, temples, and gentle deer.",
         image: "/lifestyle/nara-park.jpg"
     },
 
     {
         id: 2,
-        location: "Antelope Canyon, Arizona",
+        location: "Antelope Canyon, USA",
         description: "Where carved sandstone waves catch fire in the light",
-        image:"/lifestyle/antelope canyon.jpg"
+        image:"/lifestyle/antelope canyon 2.jpg"
     },
 
     {
         id: 3,
-        location: "Nara, Japan",
-        description: "Nara Park",
-        image:"/lifestyle/nara-park.jpg"
+        location: "Kumono Kodo Trail, Japan",
+        description: "Mid-section, love the trail",
+        image:"/lifestyle/kumono.jpg"
     },
 
 ]
