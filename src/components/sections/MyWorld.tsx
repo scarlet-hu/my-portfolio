@@ -12,9 +12,9 @@ const travelPhotos = [
 
     {
         id: 2,
-        location: "Arizona, USA",
-        description: "otherworldly landscape",
-        image:"/lifestyle/nara-park.jpg"
+        location: "Antelope Canyon, Arizona",
+        description: "Where carved sandstone waves catch fire in the light",
+        image:"/lifestyle/antelope canyon.jpg"
     },
 
     {
