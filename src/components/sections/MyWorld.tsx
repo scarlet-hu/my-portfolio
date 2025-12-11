@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Pizza, Lightbulb } from "lucide-react"
+import { Pizza, Lightbulb, Clapperboard} from "lucide-react"
 
 
 const travelPhotos = [
@@ -39,6 +39,12 @@ const lists = [
         title: "Favorite Things",
         icon: <Lightbulb size={32} className="text-brand" />,
         items: ["Watch TV Shows", "Hiking/Have a walk on a sunny day", "Breathe fresh airs"]
+    },
+    {
+        id: 3,
+        title: "Favorite Movies & TV Shows",
+        icon: <Clapperboard size={32} className="text-brand" />,
+        items: ["Interstellar", "La La Land", "Severance", "Westworld Season 1","The Night Agent Season 1" ]
     }
 ];
 
@@ -85,7 +91,7 @@ export default function MyWorld() {
                 </div>
 
                 {/* Part 2: Info Cards (Food & Favorites) */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {lists.map((card) => (
                         <div
                         key={card.id} 
