@@ -71,6 +71,7 @@ export default function Footer() {
                       name="name"
                       placeholder="Your Name"
                       className="w-full bg-transparent border-b border-white/20 py-4 text-white placeholder-white/70 focus:outline-none focus:border-white transition-colors text-lg"
+                      required
                     />
 
                     <ValidationError prefix="Name" field="name" errors={state.errors} />
@@ -84,6 +85,7 @@ export default function Footer() {
                       name="email"
                       placeholder="Your Email"
                       className="w-full bg-transparent border-b border-white/20 py-4 text-white placeholder-white/70 focus:outline-none focus:border-white transition-colors text-lg"
+                      required
                     />
                     <ValidationError prefix="Email" field="email" errors={state.errors} />
                   </div>
@@ -99,6 +101,7 @@ export default function Footer() {
                     rows={4}
                     placeholder="Tell me about your project..."
                     className="w-full bg-transparent border-b border-white/20 py-4 text-white placeholder-white/70 focus:outline-none focus:border-white transition-colors resize-none text-lg"
+                    required
                   />
                   <ValidationError prefix="Message" field="message" errors={state.errors} />
                 </div>
