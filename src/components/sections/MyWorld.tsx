@@ -30,13 +30,13 @@ const travelPhotos = [
 //Data for the bottom cards (Lists)
 const lists = [
     {
-        id: 2,
+        id: 1,
         title: "Favorite Things",
         icon: <Lightbulb size={32} className="text-brand" />,
         items: ["Watch TV Shows & Movies", "Hiking/Have a walk on a sunny day", "Breathe fresh airs"]
     },
     {
-        id: 3,
+        id: 2,
         title: "Favorite Movies & TV Shows",
         icon: <Clapperboard size={32} className="text-brand" />,
         items: ["Interstellar", "La La Land", "Severance", "Westworld Season 1", "The Night Agent Season 1"]

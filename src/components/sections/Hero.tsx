@@ -45,7 +45,7 @@ export default function Hero() {
                     <FaGithub size={24} />
                 </a>
                 <a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/sijia-hu-1102a235b/"
                     target="_blank"
                     rel="noreferrer"
                     className="hover:text-brand hover:scale-110 transition-transform"

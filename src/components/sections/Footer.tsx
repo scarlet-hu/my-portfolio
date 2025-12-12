@@ -2,7 +2,7 @@
 "use client";
 
 import { ArrowRight, CheckCircle, Loader2 } from "lucide-react";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { useForm, ValidationError } from '@formspree/react';
 
 export default function Footer() {
@@ -32,8 +32,11 @@ export default function Footer() {
 
             {/* Social Proof / Icons - Moved closer to text block */}
             <div className="flex gap-6">
-              <a href="#" className="text-white/70 hover:text-white transition-colors" aria-label="GitHub">
+              <a href="https://github.com/scarlet-hu" className="text-white/70 hover:text-white transition-colors" aria-label="GitHub">
                 <FaGithub size={26} />
+              </a>
+              <a href="https://www.linkedin.com/in/sijia-hu-1102a235b" className="text-white/70 hover:text-white transition-colors" aria-label="Linkedin">
+                <FaLinkedin size={26} />
               </a>
             </div>
           </div>
@@ -135,7 +138,7 @@ export default function Footer() {
         {/* BOTTOM ROW: Copyright */}
         <div className="pt-8 border-t border-white/10 text-center md:text-left">
           <p className="text-white/40 text-sm">
-            © {currentYear} Scarlett. All rights reserved.
+            © {currentYear} Sijia Hu. All rights reserved.
           </p>
         </div>
 
