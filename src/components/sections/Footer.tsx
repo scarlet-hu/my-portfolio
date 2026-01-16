@@ -10,7 +10,7 @@ export default function Footer() {
   const [state, handleSubmit] = useForm("manrpvrw");
 
   return (
-    <footer className="bg-brand-dark text-white pt-24 pb-12">
+    <footer id="contact-form" className="bg-brand-dark text-white pt-24 pb-12">
       <div className="max-w-6xl mx-auto px-6">
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-16 mb-24">

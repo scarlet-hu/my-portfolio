@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
@@ -8,8 +9,9 @@ const projects = [
         title: "Iris",
         category: "Web App",
         image: "/projects/Iris.png",
-        description: "A full-stack Kanban solution integrating instant messaging, task tracking, and data visualization",
-        link: "#"
+        description: "A full-stack Kanban internal solution integrating instant messaging, task tracking, and data visualization",
+        link: "",
+        isPrivate:true
     },
     {
         id: 2,
@@ -17,19 +19,33 @@ const projects = [
         category: "multi-threaded processing Framework",
         image: "/projects/join copy.png",
         description: " A multi-threaded distributed data processing framework",
-        link: "https://github.com/scarlet-hu/MiniSpark"
+        link: "https://github.com/scarlet-hu/MiniSpark",
+        requiresAccess: true
     },
     {
         id: 3,
-        title: "Todo List",
+        title: "Inbox Zero Agent",
         category: "Web App",
-        image: "/projects/todolist.png",
-        description: "Making daily progress visualizable",
-        link: "#"
+        image: "/projects/inbox zero agent.png",
+        description: "an autonomous AI assistant that helps manage your emails.",
+        link: "https://github.com/scarlet-hu/InboxZero-Agent"
     }
 ]
 
 export default function Projects() {
+    const handleAccessRequest = (projectTitle: string) => {
+        const footer = document.getElementById('contact-form');
+        footer?.scrollIntoView({ behavior: 'smooth' });
+        
+        setTimeout(() => {
+            const messageField = document.getElementById('message') as HTMLTextAreaElement;
+            if (messageField) {
+                messageField.value = `Hi! I'd like to request access to the ${projectTitle} repository.`;
+                messageField.focus();
+            }
+        }, 800);
+    };
+
     return (
         <section className="py-24 bg-background">
             <div className="max-w-6xl mx-auto px-6">
@@ -69,7 +85,20 @@ export default function Projects() {
                                 {project.description}
                             </p>
 
-                            {/* "View Live" Link #TODO: maybe change the text back to view live later */}
+                        {/* Conditional rendering based on project type */}
+                        {project.isPrivate ? (
+                            <span className="inline-flex items-center text-text-muted text-sm italic">
+                                Company Project
+                            </span>
+                        ) : project.requiresAccess ? (
+                            <button
+                                onClick={() => handleAccessRequest(project.title)}
+                                className="inline-flex items-center text-brand font-bold text-sm hover:underline cursor-pointer transition-opacity"
+                            >
+                                Request Code Access
+                                <ArrowRight size={16} className="ml-1 transition-transform group-hover:translate-x-1" />
+                            </button>
+                        ) : (
                             <a
                                 href={project.link}
                                 className="inline-flex items-center text-brand font-bold text-sm hover:underline"
@@ -77,6 +106,7 @@ export default function Projects() {
                                 View Project
                                 <ArrowRight size={16} className="ml-1 transition-transform group-hover:translate-x-1" />
                             </a>
+                        )}
                         </div>
 
                     ))}
