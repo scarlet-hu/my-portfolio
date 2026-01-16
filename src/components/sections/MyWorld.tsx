@@ -31,9 +31,9 @@ const travelPhotos = [
 const lists = [
     {
         id: 1,
-        title: "Favorite Things",
+        title: "Simple Joys",
         icon: <Lightbulb size={32} className="text-brand" />,
-        items: ["Watch TV Shows & Movies", "Hiking/Have a walk on a sunny day", "Breathe fresh airs"]
+        items: ["Watch TV Shows & Movies", "Hiking/Have a walk on a sunny day", "The first sip of morning coffee/tea"]
     },
     {
         id: 2,
